@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Half Tales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Half Tales Logo" class="logo">
+                <h1>Half Tales</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work Gallery</h2>
+            <p style="text-align: center; margin-bottom: 30px;" class="section-subtitle">Explore our compony with different image</p>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All image</button>
+                <button class="filter-btn" data-filter="residential">books</button>
+                <button class="filter-btn" data-filter="corporate">customers</button>
+                <button class="filter-btn" data-filter="industrial">compony</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item residential">
+                    <img src="book1.jpg" alt="Residential Solar Installation">
+                    <div class="gallery-overlay">
+                        <h3>Books</h3>
+                        <p>Greater noida</p>
+                    </div>
+                </div>
+                <div class="gallery-item industrial">
+                    <img src="booke3.jpg" alt="Corporate Solar Installation">
+                    <div class="gallery-overlay">
+                        <h3>novel</h3>
+                        <p>kccitm greater noida</p>
+                    </div>
+                </div>
+                <div class="gallery-item residential">
+                    <img src="booke2.jpg" alt="Residential Solar Panels">
+                    <div class="gallery-overlay">
+                        <h3>books</h3>
+                        <p>niet collage</p>
+                    </div>
+                </div>
+                <div class="gallery-item residential">
+                    <img src="book3.jpg" alt="Industrial Solar Installation">
+                    <div class="gallery-overlay">
+                        <h3>novel</h3>
+                        <p>united collage</p>
+                    </div>
+                </div>
+                <div class="gallery-item corporate">
+                    <img src="book4.jpg" alt="Corporate Solar Farm">
+                    <div class="gallery-overlay">
+                        <h3>ncert</h3>
+                        <p>school student</p>
+                    </div>
+                </div>
+                <div class="gallery-item industrial">
+                    <img src="booke3.jpg" alt="Residential Solar Array">
+                    <div class="gallery-overlay">
+                        <h3>medical</h3>
+                        <p>aiims kalyani 1st year</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <p>Want to see more of our projects?</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.jpg" width="120px">
+                    <h3>Half Tales</h3>
+                    <p>Bringing stories to life at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> i-56, sangam park, khora colony, gzb, u.p-201309</p>
+                    <p><i class="fas fa-phone"></i> +91 9376457792</p>
+                    <p><i class="fas fa-envelope"></i> info@halftales.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Half Tales. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Half Tales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="purchase.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Half Tales Logo" class="logo">
+                <h1>Half Tales</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Discover Your Next Favorite Book</h2>
+                <p>Quality books at half the price</p>
+            </div>
+        </section>
+
+        <section class="books" id="books">
+            <div class="container">
+                <h2>Our Book Collection</h2>
+                <div class="book-grid">
+                    <!-- Book 1 -->
+                    <div class="book-card">
+                        <img src="book1.jpg" alt="Gunahon Ka Devta">
+                        <h3>Gunahon Ka Devta</h3>
+                        <p class="author">Dharamvir Bharati</p>
+                        <div class="price">
+                            <span class="original-price">₹260</span>
+                            <span class="discounted-price">₹100</span>
+                        </div>
+                        <button class="btn add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-card">
+                        <img src="book2.jpg" alt="Godaan">
+                        <h3>Godaan</h3>
+                        <p class="author">Premchand</p>
+                        <div class="price">
+                            <span class="original-price">₹249</span>
+                            <span class="discounted-price">₹100</span>
+                        </div>
+                        <button class="btn add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                    
+                    <!-- Book 3 -->
+                    <div class="book-card">
+                        <img src="book3.jpg" alt="Maila Aanchal">
+                        <h3>Maila Aanchal</h3>
+                        <p class="author">Phanishwar Nath 'Renu'</p>
+                        <div class="price">
+                            <span class="original-price">₹160</span>
+                            <span class="discounted-price">₹100</span>
+                        </div>
+                        <button class="btn add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                    
+                    <!-- Book 4 -->
+                    <div class="book-card">
+                        <img src="booke2.jpg" alt="The Great Gatsby">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="price">
+                            <span class="original-price">₹329</span>
+                            <span class="discounted-price">₹160</span>
+                        </div>
+                        <button class="btn add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.jpg" width="120px">
+                    <h3>Half Tales</h3>
+                    <p>Bringing stories to life at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> i-56, sangam park, khora colony, gzb, u.p-201309</p>
+                    <p><i class="fas fa-phone"></i> +91 9376457792</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Half Tales. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
