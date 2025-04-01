@@ -127,3 +127,55 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize cart count
     updateCartCount();
 });
+
+// Search functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.getElementById('search-form');
+    const searchInput = document.getElementById('search-input');
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchContainer = document.querySelector('.search-container');
+    
+    // Toggle search bar on mobile
+    searchToggle.addEventListener('click', function() {
+        searchContainer.classList.toggle('active');
+        if (searchContainer.classList.contains('active')) {
+            searchInput.focus();
+        }
+    });
+    
+    // Search functionality
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        performSearch();
+    });
+    
+    // Optional: Live search as you type
+    searchInput.addEventListener('input', function() {
+        performSearch();
+    });
+    
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const bookCards = document.querySelectorAll('.book-card');
+        
+        bookCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const author = card.querySelector('.author').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || author.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    // Close search when clicking outside on mobile
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 992 && 
+            !e.target.closest('.search-container') && 
+            !e.target.closest('.search-toggle')) {
+            searchContainer.classList.remove('active');
+        }
+    });
+});
